@@ -1,0 +1,249 @@
+/* fonts */
+
+@font-face {
+  font-family: "Asap Regular";
+  src: url("assets/fonts/Asap-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  src: url("assets/fonts/SegoeWP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Segoe WP Light";
+  src: url("assets/fonts/segoe-wp-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PT Sans Regular";
+  src: url("assets/fonts/PTS55F.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1300px;
+}
+
+body::before {
+  content: '';
+  background-image: url(./assets/images/header/background.png);
+  width: 100vw;
+  height: 566px;
+  max-width: 1300px;
+  position: absolute;
+  z-index: -1; 
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+
+/* header */
+
+.header {
+  padding-top: 29px;
+  max-width: 1024px;
+  height: 83px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image2 {
+  position: absolute;
+  left: 3px; 
+}
+
+.logo-name {
+  font-family: "Lucida Sans", serif;
+  font-style: italic;
+  font-weight: 400;
+  margin: 12px 0 0 4px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-size: 41px;
+  color: white;
+}
+
+.nav {
+  width: 453px;
+  height: 41px;
+  margin-right: 1px;
+  margin-bottom: -1px;
+  background-color: #f5c506;
+  box-shadow:
+    -4px -5px rgba(245, 197, 6, 0.27),
+    -8px -8px rgba(245, 197, 6, 0.27);
+}
+
+.nav-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.nav-item {
+  font-size: 17px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.nav-item:not(:last-of-type) {
+  border-right: 1px solid #9b7d08;
+}
+
+.nav-link {
+  display: flex;
+  text-decoration: none;
+  color: #9b7d08;
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+  font-family: "Segoe WP", serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.nav-link:hover {
+  background-color: #f7d859;
+}
+
+.nav-item span {
+  margin-top: 12px;
+  margin-left: 8px;
+  line-height: 17px;
+}
+
+.nav-item img {
+  margin-top: 9px;
+}
+
+.nav-item.about {
+  width: 150px;
+}
+
+.nav-item.about img {
+  margin-left: 37px;
+}
+
+.nav-item.services {
+  width: 110px;
+}
+
+.nav-item.services img {
+  margin-left: 12px;
+}
+
+.nav-item.contact img {
+  margin-left: 15px;
+}
+
+@media (max-width: 640px) {
+  body::before {
+    display: none;
+  }
+
+  .header {
+    padding: 0;
+    margin: 0;
+    height: 62px;
+  }
+
+  .logo {
+    margin-top: 1px;
+    min-width: 186px;
+    height: 100%;
+    background-color: #474747;
+  }
+
+  .logo-image {
+    margin-left: 12px;
+    width: 40px;
+    height: 39px;
+  }
+
+  .logo-image2 {
+    width: 40px;
+    height: 39px;
+    left: 12px;
+  }
+
+  .logo-name {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+  }
+
+  .nav {
+    margin: 0;
+    height: 100%;
+    box-shadow: unset;
+  }
+
+  .nav-item {
+    box-sizing: border-box;
+    font-size: 19px;
+  }
+
+  .nav-item img {
+    margin-top: 20px;
+  }
+
+  .nav-item span {
+    margin-top: 22px;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-item.about {
+    min-width: 172px;
+  }
+
+  .nav-item.about img {
+    width: 24px;
+    height: 22px;
+    margin-left: 22px;
+  }
+
+  .nav-item.about span {
+    margin-left: 12px;
+  }
+
+  .nav-item.services {
+    min-width: 132px;
+  }
+
+  .nav-item.services img {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+  }
+
+  .nav-item.services span {
+    margin-left: 6px;
+  }
+
+  .nav-item.contact img {
+    width: 28px;
+    height: 21px;
+    margin-left: 12px;
+  }
+}
