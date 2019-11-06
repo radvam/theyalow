@@ -1,3 +1,3 @@
 # Theyalow. Difficulty level 1
 
-## [Deploy project](https://radvam.github.io/Theyalow/)
+## [Deploy project](https://radvam.github.io/theyalow/)
